@@ -11,6 +11,6 @@ outputs:
     description: "The current time"
 runs:
   using: "docker"
-  image: "Dockrefile"
+  image: "Dockerfile"
   args:
   - ${{ inputs.who-to-greet }}
