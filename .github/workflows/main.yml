@@ -15,7 +15,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: |
+    - uses: actions/checkout@v3.3.0
+    - name: build
+      run: |
         echo "Triggering event name: $GITHUB_EVENT_NAME"
         echo "Branch or ref: $GITHUB_REF_NAME"
         echo "All files in the repository:"
