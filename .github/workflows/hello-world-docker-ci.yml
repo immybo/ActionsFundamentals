@@ -3,7 +3,7 @@ on:
   push:
     paths:
     - hello-world-docker-action/**
-  workflow_run: {}
+  workflow_dispatch:
 jobs:
   RunHelloWorld:
     runs-on: ubuntu-latest
