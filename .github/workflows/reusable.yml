@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "Hello "
-    - id: time
+    - id: current-time
       run: echo "current-time=$(date)" >> "$GITHUB_OUTPUT"
